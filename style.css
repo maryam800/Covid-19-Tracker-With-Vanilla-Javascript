@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+header {
+  background-image: url("OIP.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  position: relative;
+  top: 0;
+  color: white;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 109, 252, 0.851);
+}
+header h1 {
+  padding-top: 80px;
+}
+#headerText {
+  margin-top: -8px;
+  font-size: 14px;
+}
+header small {
+  text-align: center;
+}
+.header-content {
+  position: relative;
+  z-index: 999;
+}
+.header-content .general-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 4rem;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  header h1 {
+    padding-top: 20px;
+  }
+  .header-content .general-info {
+    flex-direction: column;
+    margin-top: 12px;
+    align-items: center;
+  }
+  .header-content .general-info div:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+  .header-content .general-info div {
+    width: 100%;
+  }
+  .header-content .general-info h3 {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  .header-content .general-info p {
+    font-size: 10px;
+    margin-top: -5px;
+  }
+  form input {
+    width: 90% !important;
+    margin: 0 5px;
+  }
+  .result .result-header {
+    margin-top: 20px !important;
+  }
+  .result .result-header,
+  .result .result-body {
+    padding: 10px 0 !important;
+    width: 90% !important;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+#main{
+    height: calc(100vh - 350px);
+}
+.result .result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(13, 109, 252, 0.851);
+  color: white;
+}
+
+.result .result-header span {
+  font-weight: bold;
+}
+#show-alert{
+  position: fixed;
+  bottom: 20px;
+  padding: 5px;
+  right: 0;
+}
